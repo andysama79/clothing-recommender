@@ -25,12 +25,12 @@ def download_humans():
             response = requests.get(url, stream=True)
             response.raise_for_status()
 
-            filename = os.path.join(download_path, name + '.jpg')
+            filename = os.path.join(download_path, name + '.png')
 
             with open(filename, 'wb') as file:
                 for chunk in response.iter_content(chunk_size=1024):
                     file.write(chunk)
-            print(f'Downloaded {name}.jpg')
+            print(f'Downloaded {name}.png')
 
         except requests.exceptions.RequestException as e:
             print(f'Failed to download {name}')
@@ -107,8 +107,8 @@ def download_onepiece():
 
 def main():
     download_humans()
-    download_onepiece()
-    download_tops()
+    # download_onepiece()
+    # download_tops()
 
 if __name__ == "__main__":
     main()

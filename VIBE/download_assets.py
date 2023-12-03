@@ -107,8 +107,8 @@ def download_onepiece():
 
 def main():
     download_humans()
-    # download_onepiece()
-    # download_tops()
+    download_onepiece()
+    download_tops()
 
 if __name__ == "__main__":
     main()

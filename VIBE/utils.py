@@ -14,7 +14,7 @@ for name, url in zip(image_names, image_urls):
         response = requests.get(url, stream=True)
         response.raise_for_status()
 
-        filename = os.path.join(download_path, name+'.jpg')
+        filename = os.path.join(download_path, name+'.png')
 
         with open(filename, 'wb') as file:
             for chunk in response.iter_content(chunk_size=8192):

@@ -41,7 +41,7 @@ def bin_array(folder_path, vocabulary):
 
 
 # Example usage
-folder_path = '/home/consularparadi/Downloads/MLPR/clothing-recommender/data/dataset/tops/meta_descriptions'
+folder_path = 'dataset/tops/meta_descriptions'
 vocabulary = generate_vocabulary(folder_path)
 print(vocabulary.__len__())
 print(vocabulary)

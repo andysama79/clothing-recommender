@@ -1,1 +1,0 @@
-{"12": [{"dimension_id": "1", "dimension_name": "Bust", "value": "108cm"}]}
